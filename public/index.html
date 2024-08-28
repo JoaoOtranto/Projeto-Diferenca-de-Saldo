@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Comparar Planilhas Excel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Comparação de planilhas Diferença de Saldo</h1>
+            <p>É super importante que os order ids estejam localizados na coluna A de ambas as planilhas para comparação!</p>
+        </div>
+        <div class="form">
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <label class="" for="sheet1">Selecione a Primeira Planilha:</label><br>
+                <input type="file" name="sheets" id="sheet1" required><br><br>
+                <label for="sheet2">Selecione a Segunda Planilha:</label><br>
+                <input type="file" name="sheets" id="sheet2" required><br><br>
+                <button type="submit">Comparar Orders</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
